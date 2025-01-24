@@ -72,7 +72,7 @@ fun MyNavigation(repository:MovieRepository){
             val detailsViewModel = MovieDetailsViewModel(repository)
 
             detailsViewModel.fetchDetails(movieId, "1c27a4d25f2dfd5a77bd7be585bc84d2")
-            MovieDetailsScreen(viewModel = detailsViewModel, movieId = movieId, navController)
+            MovieDetailsScreen(viewModel = detailsViewModel,navController)
 
         }
     }
